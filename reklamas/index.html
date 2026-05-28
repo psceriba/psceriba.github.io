@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Reklāma #1 | Piemāju saimniecība Cerība – iegultais kods</title>
+    <title>Reklāmas ģenerators | Piemāju saimniecība Cerība</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -68,7 +68,6 @@
             padding: 2rem;
         }
 
-        /* Kreisā puse – reklāmas priekšskatījums */
         .preview-area {
             flex: 2;
             min-width: 280px;
@@ -93,7 +92,6 @@
             border-radius: 24px;
             padding: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: all 0.2s;
             display: flex;
             justify-content: var(--iframe-justify, flex-start);
         }
@@ -106,7 +104,6 @@
             transition: width 0.2s, height 0.2s;
         }
 
-        /* Labā puse – vadīklas un koda ģenerators */
         .controls-area {
             flex: 1.2;
             min-width: 260px;
@@ -261,62 +258,25 @@
 <div class="container">
     <div class="header">
         <a href="/" class="back-link"><i class="fas fa-arrow-left"></i> Atpakaļ uz sākumlapu</a>
-        <h1><i class="fas fa-ad"></i> Reklāma #1 – Piemāju saimniecība Cerība</h1>
-        <p>Izmēri un novietojums tiek iestrādāti ģenerētajā iframe kodā</p>
+        <h1><i class="fas fa-code"></i> Reklāmas iframe ģenerators</h1>
+        <p>Izvēlies izmēru – iegūsti vienkāršu iframe kodu</p>
     </div>
 
     <div class="main-layout">
-        <!-- Kreisā puse: reklāmas priekšskatījums -->
+        <!-- Kreisā puse: priekšskatījums -->
         <div class="preview-area">
             <div class="preview-label">
                 <i class="fas fa-eye"></i> Priekšskatījums (mainiet izmērus un novietojumu)
             </div>
             <div class="iframe-wrapper" id="iframeWrapper">
-                <iframe id="adPreview" title="Reklāma Cerība" srcdoc="
-                    <!DOCTYPE html>
-                    <html lang='lv'>
-                    <head>
-                        <meta charset='UTF-8'>
-                        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'>
-                        <style>
-                            *{margin:0;padding:0;box-sizing:border-box;}
-                            body{background:#FEFAF3;font-family:'Inter',sans-serif;display:flex;align-items:center;justify-content:center;min-height:100%;padding:1rem;}
-                            .ad-card{max-width:500px;background:#FFFFFF;border-radius:32px;padding:1.5rem;box-shadow:0 8px 20px rgba(0,0,0,0.08);text-align:center;margin:auto;}
-                            .badge{background:#E9F0E1;display:inline-block;padding:0.2rem 1rem;border-radius:40px;font-size:0.7rem;font-weight:700;color:#3D6725;margin-bottom:1rem;}
-                            h3{font-family:'Playfair Display',serif;font-size:1.8rem;color:#2E4A1E;}
-                            h3 span{color:#B88B2C;}
-                            .tagline{font-size:0.9rem;color:#6F684F;margin:0.5rem 0 1rem;border-left:3px solid #C4A86B;padding-left:1rem;text-align:left;}
-                            .info-banner{background:#E6F0E0;border-radius:30px;padding:0.5rem 1rem;font-size:0.7rem;color:#4A5B2C;margin:1rem 0;display:flex;align-items:center;gap:8px;justify-content:center;}
-                            .products{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin:1rem 0;}
-                            .prod{background:#F6F1E8;border-radius:40px;padding:0.3rem 0.9rem;font-size:0.75rem;font-weight:500;color:#4F6B33;}
-                            .btn{background:#5D8736;color:white;border:none;padding:0.5rem 1.2rem;border-radius:60px;font-weight:600;margin-top:0.5rem;cursor:pointer;transition:0.2s;}
-                            .btn:hover{background:#416B26;}
-                            .contact{font-size:0.7rem;margin-top:0.8rem;color:#7D7156;}
-                        </style>
-                    </head>
-                    <body>
-                        <div class='ad-card'>
-                            <div class='badge'><i class='fas fa-tractor'></i> Ģimenes saimniecība</div>
-                            <h3>Piemāju saimniecība <span>Cerība</span></h3>
-                            <div class='tagline'><i class='fas fa-shield-alt'></i> Aizsargājam ražu pret kaitēkļiem – lietojam augu aizsardzības līdzekļus, lai kukaiņi neapēd augus. Tā nodrošinām veselīgu produkciju.</div>
-                            <div class='info-banner'><i class='fas fa-leaf'></i> <span>Atbildīga kopšana · Precīza deva · Veselīga raža</span></div>
-                            <div class='products'>
-                                <span class='prod'><i class='fas fa-egg'></i> Lauku olas</span>
-                                <span class='prod'><i class='fas fa-carrot'></i> Sezonas dārzeņi</span>
-                                <span class='prod'><i class='fas fa-apple-alt'></i> Svaigas ogas</span>
-                                <span class='prod'><i class='fas fa-drumstick-bite'></i> Ganību gaļa</span>
-                            </div>
-                            <button class='btn' onclick=\"window.top.location.href='mailto:psceribas@gmail.com'\">Pieprasīt informāciju</button>
-                            <div class='contact'><i class='fas fa-at'></i> psceribas@gmail.com</div>
-                        </div>
-                    </body>
-                    </html>
-                "></iframe>
+                <iframe id="adPreview" title="Reklāma Cerība" src="https://psceriba.github.io/reklamas/reklama1/index.html"></iframe>
+            </div>
+            <div style="font-size:0.7rem; margin-top:0.8rem; text-align:center; color:#8F7F64;">
+                <i class="fas fa-arrow-left"></i> <i class="fas fa-arrow-right"></i> Novietojums maina tikai priekšskatījumu (neietekmē kodu)
             </div>
         </div>
 
-        <!-- Labā puse: kontrole un koda ģenerators -->
+        <!-- Labā puse: vadīklas -->
         <div class="controls-area">
             <div class="control-group">
                 <label><i class="fas fa-arrows-alt"></i> Izmēri (platums x augstums)</label>
@@ -331,15 +291,15 @@
                     </div>
                 </div>
                 <div class="preset-buttons">
-                    <button class="preset" data-w="300" data-h="420">Mazs (300x420)</button>
-                    <button class="preset" data-w="450" data-h="460">Vidējs (450x460)</button>
-                    <button class="preset" data-w="600" data-h="500">Liels (600x500)</button>
-                    <button class="preset" data-w="800" data-h="540">Pilns (800x540)</button>
+                    <button class="preset" data-w="300" data-h="420">300x420</button>
+                    <button class="preset" data-w="450" data-h="460">450x460</button>
+                    <button class="preset" data-w="600" data-h="500">600x500</button>
+                    <button class="preset" data-w="800" data-h="540">800x540</button>
                 </div>
             </div>
 
             <div class="control-group">
-                <label><i class="fas fa-align-left"></i> Novietojums (iekļaujams kodā)</label>
+                <label><i class="fas fa-align-left"></i> Novietojums (tikai priekšskatījumam)</label>
                 <div class="alignment-buttons">
                     <button class="align-btn" data-align="left"><i class="fas fa-align-left"></i> Pa kreisi</button>
                     <button class="align-btn" data-align="center"><i class="fas fa-align-center"></i> Centrā</button>
@@ -349,7 +309,7 @@
 
             <div class="code-section">
                 <div class="code-header">
-                    <span><i class="fas fa-code"></i> Iegultais iframe kods (ar pozīciju)</span>
+                    <span><i class="fas fa-code"></i> Iegultais kods (vienkāršs iframe)</span>
                     <button class="copy-btn" id="copyBtn"><i class="fas fa-copy"></i> Kopēt</button>
                 </div>
                 <div class="code-area" id="iframeCodeDisplay"></div>
@@ -357,14 +317,17 @@
             </div>
             <hr>
             <div style="font-size: 0.7rem; color:#8F7F64;">
-                <i class="fas fa-info-circle"></i> Kods satur divu līmeņu struktūru: ārējais <code>&lt;div&gt;</code> ar teksta izlīdzinājumu, un iekšējais iframe ar norādītajiem izmēriem. Ielīmējiet to savā mājaslapā.
+                <i class="fas fa-info-circle"></i> Kods ir tīrs iframe – ielīmē to jebkurā vietnē. Novietojumu vari pielāgot pats.
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    // Iegūt referces
+    // === PAREIZĀ ADRESE, KUR ATRODAS REKLĀMA ===
+    const adUrl = "https://psceriba.github.io/reklamas/reklama1/index.html";
+
+    // Elementi
     const iframe = document.getElementById('adPreview');
     const widthInput = document.getElementById('widthInput');
     const heightInput = document.getElementById('heightInput');
@@ -373,24 +336,21 @@
     const copyBtn = document.getElementById('copyBtn');
     const copyFeedback = document.getElementById('copyFeedback');
 
-    // Reklāmas saturs (srcdoc)
-    const adSrcdoc = iframe.getAttribute('srcdoc');
-
-    // Pašreizējais stāvoklis
     let currentWidth = 500;
     let currentHeight = 480;
-    let currentAlign = 'left'; // 'left', 'center', 'right'
+    let currentAlign = 'left';
 
-    // Atjaunot iframe priekšskatījuma izmērus un novietojumu
+    // Ielādē pareizo reklāmu priekšskatījumā
+    iframe.src = adUrl;
+
+    // Atjaunot izmērus un novietojumu (tikai priekšskatījumam)
     function updatePreview() {
         let w = parseInt(widthInput.value, 10);
         let h = parseInt(heightInput.value, 10);
         if (isNaN(w)) w = 500;
         if (isNaN(h)) h = 480;
-        if (w < 200) w = 200;
-        if (h < 300) h = 300;
-        if (w > 1200) w = 1200;
-        if (h > 800) h = 800;
+        w = Math.min(1200, Math.max(200, w));
+        h = Math.min(800, Math.max(300, h));
         currentWidth = w;
         currentHeight = h;
         widthInput.value = w;
@@ -398,12 +358,12 @@
         iframe.style.width = w + 'px';
         iframe.style.height = h + 'px';
 
-        // Novietojums priekšskatījumā (tikai vizuāli)
+        // Novietojums priekšskatījumā
         if (currentAlign === 'left') wrapper.style.setProperty('--iframe-justify', 'flex-start');
         else if (currentAlign === 'center') wrapper.style.setProperty('--iframe-justify', 'center');
         else wrapper.style.setProperty('--iframe-justify', 'flex-end');
 
-        // Atjaunot aktīvās pogas izskatu
+        // Aktīvā poga
         document.querySelectorAll('.align-btn').forEach(btn => {
             if (btn.getAttribute('data-align') === currentAlign) btn.classList.add('active');
             else btn.classList.remove('active');
@@ -412,56 +372,51 @@
         generateIframeCode();
     }
 
-    // Ģenerēt iframe kodu, kurā iekļauts arī novietojums
+    // Ģenerē tīru iframe kodu (bez apkārtējā div)
     function generateIframeCode() {
-        // Iegūstam tīru srcdoc bez liekām apostrofu problēmām
-        const safeSrcdoc = adSrcdoc.replace(/'/g, "\\'").replace(/[\u0000-\u001F\u007F-\u009F]/g, '');
-        // Izveidojam iframe tagu
-        const iframeTag = `<iframe src="https://psceriba.github.io/reklama/reklama1/index.html" srcdoc='${safeSrcdoc}' width="${currentWidth}" height="${currentHeight}" style="border:none; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" frameborder="0" scrolling="no" title="Cerība reklāma"></iframe>`;
-        
-        // Pievienojam ārējo div ar teksta izlīdzinājumu atkarībā no izvēles
-        let alignStyle = '';
-        if (currentAlign === 'left') alignStyle = 'text-align: left;';
-        else if (currentAlign === 'center') alignStyle = 'text-align: center;';
-        else if (currentAlign === 'right') alignStyle = 'text-align: right;';
-        
-        const finalCode = `<div style="${alignStyle}">\n    ${iframeTag}\n</div>`;
-        codeDisplay.innerText = finalCode;
+        const iframeTag = `<iframe src="${adUrl}" width="${currentWidth}" height="${currentHeight}" style="border:none; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" frameborder="0" scrolling="no" title="Cerība reklāma"></iframe>`;
+        codeDisplay.innerText = iframeTag;
     }
 
-    // Notikumu apstrāde
-    widthInput.addEventListener('input', () => {
-        updatePreview();
-    });
-    heightInput.addEventListener('input', () => {
-        updatePreview();
-    });
+    // Universāla kopēšanas funkcija (darbojas visur)
+    async function copyToClipboard(text) {
+        // Mēģinām moderno Clipboard API
+        if (navigator.clipboard && window.isSecureContext) {
+            try {
+                await navigator.clipboard.writeText(text);
+                return true;
+            } catch (err) {
+                console.warn('Clipboard API failed', err);
+            }
+        }
+        // Fallback: izmantojam textarea un execCommand
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.top = '-9999px';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        textarea.setSelectionRange(0, text.length);
+        let success = false;
+        try {
+            success = document.execCommand('copy');
+        } catch (err) {
+            console.warn('execCommand failed', err);
+        }
+        document.body.removeChild(textarea);
+        return success;
+    }
 
-    document.querySelectorAll('.preset').forEach(btn => {
-        btn.addEventListener('click', () => {
-            widthInput.value = btn.getAttribute('data-w');
-            heightInput.value = btn.getAttribute('data-h');
-            updatePreview();
-        });
-    });
-
-    document.querySelectorAll('.align-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const align = btn.getAttribute('data-align');
-            currentAlign = align;
-            updatePreview();
-        });
-    });
-
-    // Kopēšana
+    // Kopēšanas notikums
     copyBtn.addEventListener('click', async () => {
         const code = codeDisplay.innerText;
-        try {
-            await navigator.clipboard.writeText(code);
-            copyFeedback.innerHTML = '<i class="fas fa-check-circle"></i> Kods nokopēts! Satur izmērus un novietojumu.';
-            setTimeout(() => { copyFeedback.innerHTML = ''; }, 3000);
-        } catch (err) {
-            copyFeedback.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Neizdevās kopēt, mēģiniet manuāli.';
+        const success = await copyToClipboard(code);
+        if (success) {
+            copyFeedback.innerHTML = '<i class="fas fa-check-circle"></i> Kods nokopēts!';
+            setTimeout(() => copyFeedback.innerHTML = '', 2500);
+        } else {
+            copyFeedback.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Neizdevās kopēt. Lūdzu, iezīmē un kopē manuāli.';
         }
     });
 
