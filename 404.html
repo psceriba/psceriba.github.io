@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 – Lapa nav atrasta | Piemāju saimniecība Cerība</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e2d9cc;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .error-container {
+            max-width: 600px;
+            width: 100%;
+            background: #FEFAF3;
+            border-radius: 48px;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .error-container:hover {
+            transform: translateY(-4px);
+        }
+
+        .farm-icon {
+            font-size: 4rem;
+            color: #7B964F;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            font-weight: 700;
+            color: #B5C99A;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 0 #E2D9C8;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: #4A6A2F;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #6F684F;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #5D8736;
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 60px;
+            font-weight: 600;
+            transition: 0.2s;
+            margin-bottom: 1.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-home:hover {
+            background: #446B28;
+            transform: translateY(-2px);
+        }
+
+        .suggestions {
+            background: #F4EFE4;
+            border-radius: 28px;
+            padding: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .suggestions p {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #4A5B2C;
+        }
+
+        .suggestions a {
+            color: #5D8736;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-weight: 500;
+        }
+
+        .suggestions a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: #9B8F70;
+        }
+
+        .contact a {
+            color: #4B6A2E;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 500px) {
+            .error-container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <div class="farm-icon">
+        <i class="fas fa-seedling"></i>
+    </div>
+    <h1>404</h1>
+    <h2><i class="fas fa-leaf"></i> Lapa nav atrasta</h2>
+    <p>
+        Šķiet, ka esat aizklīduši no mūsu saimniecības takām.<br>
+        Bet neuztraucieties – svaigie un veselīgie produkti joprojām gaida tepat blakus.
+    </p>
+    <a href="/" class="btn-home">
+        <i class="fas fa-home"></i> Doties uz sākumlapu
+    </a>
+    <div class="suggestions">
+        <p><i class="fas fa-info-circle"></i> Iespējams, vēlējāties apmeklēt:</p>
+        <p>
+            <a href="/#produkti">✨ Produkti</a> &nbsp;|&nbsp;
+            <a href="/#par-mums">🌿 Par saimniecību</a> &nbsp;|&nbsp;
+            <a href="/#kontakti">📧 Kontakti</a>
+        </p>
+    </div>
+    <div class="contact">
+        <i class="fas fa-envelope"></i> Ja problēma atkārtojas, rakstiet mums: <a href="mailto:psceribas@gmail.com">psceribas@gmail.com</a>
+    </div>
+</div>
+</body>
+</html>
