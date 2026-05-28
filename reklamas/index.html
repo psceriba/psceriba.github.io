@@ -417,7 +417,7 @@
         // Iegūstam tīru srcdoc bez liekām apostrofu problēmām
         const safeSrcdoc = adSrcdoc.replace(/'/g, "\\'").replace(/[\u0000-\u001F\u007F-\u009F]/g, '');
         // Izveidojam iframe tagu
-        const iframeTag = `<iframe src="about:blank" srcdoc='${safeSrcdoc}' width="${currentWidth}" height="${currentHeight}" style="border:none; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" frameborder="0" scrolling="no" title="Cerība reklāma"></iframe>`;
+        const iframeTag = `<iframe src="https://psceriba.github.io/reklama/reklama1/index.html" srcdoc='${safeSrcdoc}' width="${currentWidth}" height="${currentHeight}" style="border:none; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" frameborder="0" scrolling="no" title="Cerība reklāma"></iframe>`;
         
         // Pievienojam ārējo div ar teksta izlīdzinājumu atkarībā no izvēles
         let alignStyle = '';
