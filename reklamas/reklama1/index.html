@@ -2,10 +2,9 @@
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reklāma | Piemāju saimniecība Cerība – dabiski tīra saimniekošana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Banner reklāma | Cerība</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,279 +13,190 @@
         }
 
         body {
-            background: #e2d9cc;
+            background: #F5F0E8;
             display: flex;
+            align-items: center;
             justify-content: center;
-            align-items: center;
             min-height: 100vh;
-            font-family: 'Inter', sans-serif;
-            padding: 24px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 12px;
         }
 
-        /* Vienkāršs, informatīvs reklāmas baneris */
-        .ad-container {
-            max-width: 900px;
+        /* Banner konteiners – horizontāls, elastīgs */
+        .banner {
+            max-width: 800px;
             width: 100%;
-            background: #FEFAF3;
-            border-radius: 32px;
-            overflow: hidden;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-            transition: transform 0.2s;
-        }
-
-        .ad-container:hover {
-            transform: translateY(-3px);
-        }
-
-        /* Iekšējais saturs */
-        .ad-content {
-            padding: 2rem 2rem 1.8rem;
-        }
-
-        /* Galvene */
-        .farm-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: #E9F0E1;
-            padding: 0.3rem 1rem;
-            border-radius: 60px;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: #3D6725;
-            margin-bottom: 1.2rem;
-        }
-
-        .farm-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #2E4A1E;
-            margin-bottom: 0.5rem;
-        }
-
-        .farm-name span {
-            color: #B88B2C;
-        }
-
-        .tagline {
-            font-size: 1rem;
-            color: #6F684F;
-            margin-bottom: 1.5rem;
-            border-left: 3px solid #C4A86B;
-            padding-left: 1rem;
-        }
-
-        /* Informācijas bloks */
-        .info-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.2rem;
-            margin: 1.5rem 0;
-        }
-
-        .info-card {
-            flex: 1;
-            min-width: 160px;
-            background: #F6F1E8;
-            border-radius: 24px;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .info-card i {
-            font-size: 1.8rem;
-            color: #5E843C;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        .info-card h4 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #3B5624;
-            margin-bottom: 0.3rem;
-        }
-
-        .info-card p {
-            font-size: 0.8rem;
-            color: #736B50;
-        }
-
-        /* Produktu saraksts */
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin: 1.2rem 0 1.5rem;
-        }
-
-        .product-tag {
             background: white;
-            border: 1px solid #DCCFAE;
-            border-radius: 40px;
-            padding: 0.4rem 1rem;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: #4F6B33;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .product-tag i {
-            font-size: 0.8rem;
-            color: #86B34D;
-        }
-
-        /* CTA un kontakti */
-        .cta-section {
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            padding: 0.8rem 1rem;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #E6DDCF;
+            transition: transform 0.1s;
         }
 
-        .btn {
+        /* Kreisā puse – teksts un zīmols */
+        .brand {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 140px;
+        }
+
+        .badge {
+            background: #EFF5E8;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 5px;
+            padding: 0.2rem 0.7rem;
+            border-radius: 40px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            color: #3D6725;
+            width: fit-content;
+        }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2E4A1E;
+            line-height: 1.2;
+        }
+
+        .title span {
+            color: #C99E3E;
+        }
+
+        .message {
+            font-size: 0.65rem;
+            color: #5A6B47;
+            max-width: 240px;
+            border-left: 2px solid #C4A86B;
+            padding-left: 8px;
+            margin-top: 2px;
+        }
+
+        /* Produktu ikonas */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .prod-icon {
+            background: #F2EDE3;
+            border-radius: 40px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: #4B6A2E;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+        }
+
+        .prod-icon i {
+            font-size: 0.7rem;
+        }
+
+        /* Poga – skaidra, bet kompakta */
+        .cta {
             background: #5D8736;
             color: white;
-            text-decoration: none;
-            padding: 0.7rem 1.4rem;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            transition: 0.2s;
             border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.7rem;
             cursor: pointer;
-        }
-
-        .btn:hover {
-            background: #416B26;
-            transform: translateY(-2px);
-        }
-
-        .contact-info {
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            gap: 8px;
-            font-size: 0.8rem;
-            color: #7D7156;
+            gap: 6px;
+            white-space: nowrap;
+            transition: 0.15s;
         }
 
-        .contact-info i {
-            font-size: 1rem;
-            color: #5D8736;
+        .cta:hover {
+            background: #446B28;
+            transform: translateY(-1px);
         }
 
-        .contact-info a {
-            color: #4D6B2F;
+        /* E-pasts mazā formātā */
+        .email {
+            font-size: 0.6rem;
+            color: #7B6E55;
+        }
+
+        .email a {
+            color: #4B6A2E;
             text-decoration: none;
-            font-weight: 500;
         }
 
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Viegla atsauce */
-        .footer-note {
-            background: #F1ECD9;
-            text-align: center;
-            padding: 0.8rem;
-            font-size: 0.65rem;
-            color: #9B8F70;
-        }
-
+        /* Responsīvs – uz maziem ekrāniem pāriet vertikālā izkārtojumā */
         @media (max-width: 650px) {
-            .ad-content {
-                padding: 1.5rem;
-            }
-            .farm-name {
-                font-size: 1.6rem;
-            }
-            .info-grid {
+            .banner {
                 flex-direction: column;
+                align-items: stretch;
+                text-align: center;
             }
-            .cta-section {
-                flex-direction: column;
-                align-items: flex-start;
+            .brand {
+                align-items: center;
+            }
+            .message {
+                max-width: none;
+                text-align: center;
+                border-left: none;
+                padding-left: 0;
+                margin-top: 6px;
+            }
+            .products {
+                justify-content: center;
+            }
+            .cta {
+                justify-content: center;
+            }
+            .email {
+                text-align: center;
+            }
+        }
+
+        /* Ļoti šauriem ekrāniem vēl mazāks fonts */
+        @media (max-width: 450px) {
+            .title {
+                font-size: 1rem;
+            }
+            .prod-icon {
+                padding: 0.2rem 0.6rem;
+                font-size: 0.6rem;
             }
         }
     </style>
 </head>
 <body>
-<div class="ad-container">
-    <div class="ad-content">
-        <div class="farm-badge">
-            <i class="fas fa-seedling"></i> DABISKI TĪRA SAIMNIEKOŠANA
+    <div class="banner">
+        <div class="brand">
+            <div class="badge"><i class="fas fa-tractor"></i> Ģimenes saimniecība</div>
+            <div class="title">Piemāju saimniecība <span>Cerība</span></div>
+            <div class="message"><i class="fas fa-shield-alt"></i> Aizsargājam ražu – veselīgi produkti</div>
         </div>
-        <div class="farm-name">
-            Piemāju saimniecība <span>Cerība</span>
+        <div class="products">
+            <span class="prod-icon"><i class="fas fa-egg"></i> Olas</span>
+            <span class="prod-icon"><i class="fas fa-carrot"></i> Dārzeņi</span>
+            <span class="prod-icon"><i class="fas fa-apple-alt"></i> Ogas</span>
+            <span class="prod-icon"><i class="fas fa-drumstick-bite"></i> Gaļa</span>
         </div>
-        <div class="tagline">
-            <i class="fas fa-leaf"></i> Bez pesticīdiem · Bez ķīmijas · Tīra Latvijas zeme
-        </div>
-
-        <div class="info-grid">
-            <div class="info-card">
-                <i class="fas fa-tractor"></i>
-                <h4>Ģimenes saimniecība</h4>
-                <p>Darbu darām paši – no sējas līdz ražai</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-check-circle"></i>
-                <h4>Bioloģiskā metode</h4>
-                <p>Komposts, augu maiņa, dabiska aprūpe</p>
-            </div>
-            <div class="info-card">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h4>Tieši no lauka</h4>
-                <p>Svaigums un garša bez starpniekiem</p>
-            </div>
-        </div>
-
-        <div class="product-list">
-            <div class="product-tag"><i class="fas fa-egg"></i> Lauku olas</div>
-            <div class="product-tag"><i class="fas fa-carrot"></i> Sezonas dārzeņi</div>
-            <div class="product-tag"><i class="fas fa-apple-alt"></i> Svaigas ogas</div>
-            <div class="product-tag"><i class="fas fa-drumstick-bite"></i> Ganību gaļa</div>
-        </div>
-
-        <div class="cta-section">
-            <button class="btn" id="adInfoBtn">
-                <i class="fas fa-envelope"></i> Pieprasīt informāciju
-            </button>
-            <div class="contact-info">
-                <i class="fas fa-at"></i>
-                <a href="mailto:psceribas@gmail.com">psceribas@gmail.com</a>
-            </div>
+        <button class="cta" onclick="window.top.location.href='mailto:psceribas@gmail.com'">
+            <i class="fas fa-envelope"></i> Pieteikties
+        </button>
+        <div class="email">
+            <i class="fas fa-at"></i> <a href="mailto:psceribas@gmail.com">psceribas@gmail.com</a>
         </div>
     </div>
-    <div class="footer-note">
-        <i class="fas fa-map-marker-alt"></i> Latvija · Vietējais ražotājs
-    </div>
-</div>
-
-<script>
-    // Vienkārša CTA darbība – e-pasta aicinājums
-    const btn = document.getElementById('adInfoBtn');
-    if (btn) {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const confirmSend = confirm("Rakstiet mums uz psceribas@gmail.com, lai saņemtu informāciju par produktiem, cenām un pieejamību.\nVai vēlaties atvērt e-pasta programmu?");
-            if (confirmSend) {
-                window.location.href = "mailto:psceribas@gmail.com?subject=Interese%20par%20Cerība%20produktiem&body=Sveiki!%20Vēlos%20uzzināt%20vairāk%20par%20Jūsu%20dabiski%20tīrajiem%20produktiem%20(olas,%20dārzeņi,%20ogas,%20gaļa).";
-            }
-        });
-    }
-</script>
 </body>
 </html>
