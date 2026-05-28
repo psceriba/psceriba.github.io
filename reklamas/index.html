@@ -374,7 +374,14 @@
 
     // Ģenerē tīru iframe kodu (bez apkārtējā div)
     function generateIframeCode() {
-        const iframeTag = `<iframe src="${adUrl}" width="${currentWidth}" height="${currentHeight}" style="border:none; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" frameborder="0" scrolling="no" title="Cerība reklāma"></iframe>`;
+        const iframeTag = `<iframe 
+    src="https://psceriba.github.io/reklamas/reklama1/index.html"
+    width="300" 
+    height="250"
+    style="border: none; border-radius: 16px; background: transparent;"
+    title="Piemāju saimniecība Cerība reklāma"
+    loading="lazy"
+></iframe>`;
         codeDisplay.innerText = iframeTag;
     }
 
